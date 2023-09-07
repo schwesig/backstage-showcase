@@ -205,6 +205,12 @@ catalog:
 
     # Plugin: OCM
     ocm:
+      env: # Key is reflected as provider ID. Defines and claims plugin instance ownership of entities
+        name: ${OCM_HUB_NAME} # Name that the hub cluster will assume in Backstage Catalog (in OCM this is always local-cluster which can be confusing)
+        url: ${OCM_HUB_URL} # Url of the hub cluster API endpoint
+        serviceAccountToken: ${moc_infra_token} # Token used for querying data from the hub
+        skipTLSVerify: # Skip TLS certificate verification, defaults to false
+        caData: # Base64-encoded CA bundle in PEM format
       default:
         name: ${OCM_HUB_NAME}
         url: ${OCM_HUB_URL}

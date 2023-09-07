@@ -1,4 +1,4 @@
-import { EntitySwitch, isKind } from '@backstage/plugin-catalog';
+import { EntitySwitch, EntityLayout, isKind } from '@backstage/plugin-catalog';
 import React from 'react';
 
 import {
@@ -11,6 +11,17 @@ import {
   domainPage,
   resourcePage,
 } from './Pages';
+
+import { EntityKubernetesContent } from '@backstage/plugin-kubernetes';
+
+const serviceEntityPage = (
+  <EntityLayout>
+    {/* other tabs... */}
+    <EntityLayout.Route path="/kubernetes" title="Kubernetes">
+      <EntityKubernetesContent refreshIntervalMs={30000} />
+    </EntityLayout.Route>
+  </EntityLayout>
+);
 
 export const entityPage = (
   <EntitySwitch>

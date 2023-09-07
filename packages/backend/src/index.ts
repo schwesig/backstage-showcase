@@ -156,6 +156,8 @@ async function main() {
 
   const apiRouter = Router();
 
+  const kubernetesEnv = useHotMemoize(module, () => createEnv('kubernetes'));
+
   // Required plugins
   await addPlugin({ plugin: 'proxy', apiRouter, createEnv, router: proxy });
   await addPlugin({ plugin: 'auth', apiRouter, createEnv, router: auth });
@@ -242,6 +244,8 @@ async function main() {
     router: permission,
     isOptional: true,
   });
+
+  apiRouter.use('/kubernetes', await kubernetes(kubernetesEnv));
 
   // Add backends ABOVE this line; this 404 handler is the catch-all fallback
   apiRouter.use(notFoundHandler());

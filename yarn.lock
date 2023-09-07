@@ -2995,7 +2995,7 @@
     luxon "^3.0.0"
     react-use "^17.2.4"
 
-"@backstage/plugin-kubernetes-backend@0.11.5":
+"@backstage/plugin-kubernetes-backend@^0.11.5":
   version "0.11.5"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-kubernetes-backend/-/plugin-kubernetes-backend-0.11.5.tgz#efe33111fd23e9d69fa6f96ec914520756da8018"
   integrity sha512-MjZupbywy+Q7lQJTM9k0nch5a2HM+AQfC82kgY18p+vfCA/e5FsHskhmSXO1DaQ2Nd58SHojf4FHIFCfku0jEA==
@@ -3045,7 +3045,7 @@
     "@backstage/plugin-permission-common" "^0.7.7"
     "@kubernetes/client-node" "0.18.1"
 
-"@backstage/plugin-kubernetes@0.10.2":
+"@backstage/plugin-kubernetes@^0.10.2":
   version "0.10.2"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-kubernetes/-/plugin-kubernetes-0.10.2.tgz#2b17cdb87a7b58f9c3ddfe0abb2bf94c212d0a2e"
   integrity sha512-PcP8bUgHqtyIgq7dIci1yipyjoba0cLZY6KAkiu/LdFcLacp5QfCRVyP7wQL8PlP2mX4/MHboKaXNRebPQmyXA==
@@ -4958,7 +4958,7 @@
     uuid "^9.0.0"
     winston "^3.2.1"
 
-"@janus-idp/backstage-plugin-ocm-backend@3.2.1":
+"@janus-idp/backstage-plugin-ocm-backend@^3.2.1":
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/@janus-idp/backstage-plugin-ocm-backend/-/backstage-plugin-ocm-backend-3.2.1.tgz#33c25d2f7d88e855fa4ed8448007dabc3ca3dff9"
   integrity sha512-+0UCNdQmNABOcjmyBFfREZmdesWi5YfrRhxHOXkGzalSTdnTt+sLRXiN1rRQzao2hFrZKU3bUYW3mMzyKWq6Ig==
@@ -7260,7 +7260,7 @@
   resolved "https://registry.yarnpkg.com/@spotify/eslint-config-typescript/-/eslint-config-typescript-14.1.6.tgz#dffaf2eeffd0c879605497c3d6ab275d02053db1"
   integrity sha512-7TbP8nywFUMu73nNTv0NzCmmgNFvGWlRMFZ7lCiFS+UOmfyaiYpJXUHLXXmNQ+qB8/PMrtaznvCIYmus9tqI9Q==
 
-"@spotify/prettier-config@15.0.0":
+"@spotify/prettier-config@^15.0.0":
   version "15.0.0"
   resolved "https://registry.yarnpkg.com/@spotify/prettier-config/-/prettier-config-15.0.0.tgz#3dcc94ffa9c3fad68a1e8430ccba57edc0131399"
   integrity sha512-ex7bdst1STr97y/MUTgVxadxpEZy48XVQDwZrESYO07EONSRstQYBaQWGVo80jmJ9NXC+r4ZjUqjT2Gw524Nqg==
